@@ -1,4 +1,6 @@
-const args = process.argv.slice(2);
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).argv
 const readline = require("readline");
 const rl = require("readline").createInterface({
   input: process.stdin,
